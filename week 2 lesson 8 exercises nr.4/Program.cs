@@ -1,30 +1,30 @@
-﻿Console.WriteLine("podaj cyfre:");
-int cyfra = int.Parse(Console.ReadLine());
-int liczba = 0;
-int linijka = 1;
-int petla = 0;
-for (int i = 0; i < linijka; i++)
+Console.WriteLine("enter number:");
+int enteredNumber = int.Parse(Console.ReadLine());
+int number = 0;
+int line = 1;
+int loop = 0;
+for (int i = 0; i < line; i++)
 {
     Console.WriteLine();
     for (int j = 0; j <= i; j++)
     {
-        liczba++;
-        if (cyfra >= liczba)
+        number++;
+        if (enteredNumber >= number)
         {
-            Console.Write(liczba);
-            if (liczba < 10 )
+            Console.Write(number);
+            if (number < 10)
             {
                 Console.Write(" ");
             }
 
         }
-        else if (liczba == cyfra + 1)
+        else if (number == enteredNumber + 1)
         {
-            petla++;
+            loop++;
         }
     }
-    linijka++;
-    if (petla == 1)
+    line++;
+    if (loop == 1)
     {
         break;
     }
